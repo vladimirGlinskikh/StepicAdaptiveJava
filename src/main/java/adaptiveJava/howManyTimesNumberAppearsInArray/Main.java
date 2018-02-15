@@ -1,6 +1,7 @@
 package adaptiveJava.howManyTimesNumberAppearsInArray;
 
 import java.util.Scanner;
+import java.util.stream.Stream;
 
 /**
  * Created by Vladimir Glinskikh on 13.01.2018.
@@ -8,19 +9,12 @@ import java.util.Scanner;
  */
 public class Main {
     public static void main(String[] args) {
-        int y = new Scanner(System.in).nextInt();
-        int array[] = {10, 1, 9, 9, 13, 7, 0};
-        int x = array.length;
+        Scanner in = new Scanner(System.in);
+        int a = in.nextInt();
 
-        System.out.println(countNumber(array, x, y));
     }
 
-    public static int countNumber(int array[], int x, int y) {
-        int result = 0;
-        for (int i = 0; i < x; i++) {
-            if (y == array[i])
-                result++;
-        }
-        return result;
+    private static long getCount(String s, int i) {
+        return Stream.of(s.split(" ")).map(Integer::valueOf).filter(e -> e == i).count();
     }
 }
