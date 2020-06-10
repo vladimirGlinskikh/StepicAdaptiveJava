@@ -4,17 +4,17 @@ Digital watches display time in the h:mm:ss format (from 0:00:00 to 23:59:59), i
 
 N seconds passed from the beginning of the day. Output what the watches will display.
 
-#####Input data format
+##### Input data format
 
 Given the natural number N on input, not exceeding 10^710 
 7
   (10000000).
 
-#####Sample Input 1: <br>
-     3602
-#####Sample Output 1: <br>
-     1:00:02
-#####Sample Input 2: <br>
-     129700
-#####Sample Output 2: <br>
-     12:01:40
+##### Sample Input 1:<br>
+   3602
+##### Sample Output 1:<br>
+   1:00:02
+##### Sample Input 2:<br>
+   129700
+##### Sample Output 2:<br>
+   12:01:40
